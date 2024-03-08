@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title whe website -->
+    <title>Speical Design</title>
+    <!-- icon website -->
+    <link rel="icon" type="image/x-icon" href="/imgs/spical-design-logo.png">
+    <!-- main CSS file -->
+    <link rel="stylesheet" href="CSS/master.CSS">
+    <!-- normalize CSS file -->
+    <link rel="stylesheet" href="CSS/normalize.CSS">
+    <!-- font awesome file -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+</head>
+<body>
+    <!-- settings section -->
+    <div class="settings" id="settings">
+        <div id="gear">
+            <i class="fa-solid fa-gear gear" ></i>
+        </div>
+        <div class="setting-container">
+            <!-- change color section -->
+            <div id="colors">
+                <h4>Colors</h4>
+                <ul class="color-list">
+                    <li class="active" data-color="#1787e0"></li>
+                    <li data-color="#E91E63"></li>
+                    <li data-color="#4CAF50"></li>
+                    <li data-color="#FF9800"></li>
+                </ul>
+            </div>
+            <!-- font Size section -->
+            <div id="fontSize">
+                <h4>Font Size</h4>
+                <form>
+                    <input type="range" id="rangeSize" min="14" max="23">
+                </form>
+            </div>
+            <!-- background change section -->
+            <div id="background">
+                <h4>Background Change</h4>
+                <div class="options">
+                    <span class="yes active" data-optoin="yes">Yes</span>
+                    <span class="no" data-optoin="no">No</span>
+                </div>
+            </div>
+            <!-- choose background section -->
+            <div id="chooseBack">
+                <h4>choose background</h4>
+                <ul class="chooseBack">
+                    <li data-img="1">1</li>
+                    <li data-img="2">2</li>
+                    <li data-img="3">3</li>
+                    <li data-img="4">4</li>
+                </ul>
+            </div>
+            <!-- choose bullets-->
+            <div id="bullets">
+                <h4>Show Bullets</h4>
+                <div class="options-bull">
+                    <span class="yes-bull active" data-optoin="yes">Yes</span>
+                    <span class="no-bull" data-optoin="no">No</span>
+                </div>
+            </div>
+            <div id="rest">
+                <button>Rest</button>
+            </div>
+        </div>
+    </div>
+    <div class="bullets">
+        <div class="bullet" data-sec=".about-sec">
+            <div class="label">About</div>
+        </div>
+        <div class="bullet" data-sec=".skill-sec">
+            <div class="label">Skills</div>
+        </div>
+        <div class="bullet" data-sec=".gallery-sec">
+            <div class="label">Gallery</div>
+        </div>
+        <div class="bullet" data-sec=".timeLine-sec">
+            <div class="label">TimeLine</div>
+        </div>
+        <div class="bullet" data-sec=".features-sec">
+            <div class="label">Features</div>
+        </div>
+        <div class="bullet" data-sec=".testimonials-sec">
+            <div class="label">Testimonials</div>
+        </div>
+    </div>
+    <div class="to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+    <!-- Start landing page -->
+    <Header id="header">
+        <div class="container">
+            <!-- over lary above the img -->
+            <div class="overlay"></div>
+            <!-- nav links -->
+            <nav>
+                <div class="logo">Speical <span>Design</span></div>
+                <!-- manu icon -->
+                <div class="icon-manu">
+                    <i class="fa-solid fa-bars" id="manu"></i>
+                </div>
+                <ul class="links" id="links">
+                    <li><a href="#" class="active" data-sec="#">Home</a></li>
+                    <li><a href="#" data-sec=".about-sec">About us</a></li>
+                    <li><a href="#" data-sec=".skill-sec">Skills</a></li>
+                    <li><a href="#" data-sec=".gallery-sec">Gallery</a></li>
+                    <li><a href="#" data-sec=".timeLine-sec">TimeLine</a></li>
+                    <li><a href="#" data-sec=".features-sec">Features</a></li>
+                    <li><a href="#" data-sec=".testimonials-sec">Testimonials</a></li>
+                </ul>
+            </nav>
+            <!-- text the web -->
+            <div class="introduction">
+                <h1>We are <span>Creative</span> Agency</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nam possimus deleniti eum perspiciatis harum.</p>
+            </div>
+        </div>
+    </Header>
+    <!-- End landing page -->
+    <!-- Start about sectoin -->
+    <div class="about-sec">
+        <div class="container">
+            <div class="title-sec">
+                <div class="tit">About us</div>
+            </div>
+            <div class="contain-about">
+                <div class="parg-about">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicinr sit amet consectetur adipisicing  consectetur doloribus illo quis voluptatibus iure, ut excepturi adipisci dignissimos, autem fugit quam.</p>
+                </div>
+                <div class="img-about">
+                    <img src="/imgs/about-us.png" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End about sectoin -->
+    <!-- Start skills sectoin -->
+    <div class="skill-sec" id="skill-sec">
+        <div class="container">
+            <div class="title-sec">
+                <div class="tit">Skills</div>
+            </div>
+            <div class="contant-skill">
+                <div class="skill-box">
+                    <h4>HTML</h4>
+                    <div class="skill-progress">
+                        <span data-pro="82"></span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <h4>CSS</h4>
+                    <div class="skill-progress">
+                        <span data-pro="76"></span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <h4>JavaScript</h4>
+                    <div class="skill-progress">
+                        <span data-pro="70"></span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <h4>Python</h4>
+                    <div class="skill-progress">
+                        <span data-pro="66"></span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <h4>BootStrap</h4>
+                    <div class="skill-progress">
+                        <span data-pro="87"></span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <h4>SASS</h4>
+                    <div class="skill-progress">
+                        <span data-pro="54"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End skills sectoin -->
+    <!-- Start gallery sectoin -->
+    <div class="gallery-sec">
+        <div class="container">
+            <div class="title-sec">
+                <div class="tit">Gallery</div>
+            </div>
+            <div class="box-gallery">
+                <div class="img-gall">
+                    <img src="/imgs/1.jpg" alt="Image One">
+                </div>
+                <div class="img-gall">
+                    <img src="/imgs/9.jpg" alt="Image Two">
+                </div>
+                <div class="img-gall">
+                    <img src="/imgs/3.jpg" alt="Image Three">
+                </div>
+                <div class="img-gall">
+                    <img src="/imgs/4.jpg" alt="Image Four">
+                </div>
+                <div class="img-gall">
+                    <img src="/imgs/5.jpg" alt="Image Five">
+                </div>
+                <div class="img-gall">
+                    <img src="/imgs/6.jpg" alt="Image Six">
+                </div>
+                <div class="img-gall">
+                    <img src="/imgs/7.jpg" alt="Image Seven">
+                </div>
+                <div class="img-gall">
+                    <img src="/imgs/8.jpg" alt="Image Eight">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End gallery sectoin -->
+    <!-- Start Time line sectoin -->
+    <div class="timeLine-sec">
+        <div class="container">
+            <div class="content-timeLine">
+                <div class="year">2023</div>
+                <div class="left">
+                    <div class="content">
+                        <h4>Title</h4>
+                        <p>Lorem, ipsum . Odit facilis id ullam aliquid doloremque. Numquam eveniet delectus laboriosam
+                            eius aut quasi dolorum
+                        </p>
+                    </div>
+                </div>
+                <!-- to clear flaot -->
+                <div class="clearFloat"></div>
+                <div class="right">
+                    <div class="content">
+                        <h4>Title</h4>
+                        <p>Lorem, ipsum . Odit facilis id ullam aliquid doloremque. Numquam eveniet delectus laboriosam
+                            eius aut quasi dolorum
+                        </p>
+                    </div>
+                </div>
+                <!-- to clear flaot -->
+                <div class="clearFloat"></div>
+                <div class="year">2022</div>
+                <div class="left">
+                    <div class="content">
+                        <h4>Title</h4>
+                        <p>Lorem, ipsum . Odit facilis id ullam aliquid doloremque. Numquam eveniet delectus laboriosam
+                            eius aut quasi dolorum
+                        </p>
+                    </div>
+                </div>
+                <!-- to clear flaot -->
+                <div class="clearFloat"></div>
+                <div class="right">
+                    <div class="content">
+                        <h4>Title</h4>
+                        <p>Lorem, ipsum . Odit facilis id ullam aliquid doloremque. Numquam eveniet delectus laboriosam
+                            eius aut quasi dolorum
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Time line sectoin -->
+    <!-- Start Features sectoin -->
+    <div class="features-sec">
+        <div class="container">
+            <div class="title-sec">
+                <div class="tit">Features</div>
+            </div>
+            <div class="content-feat">
+                <div class="box-feat">
+                    <div class="img-feat">
+                        <img src="/imgs/Features-01.png" alt="img">
+                    </div>
+                    <div class="text-feat">
+                        <h3>Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum omnis saepe, 
+                            dignissimos voluptas.
+                        </p>
+                    </div>
+                </div>
+                <div class="box-feat">
+                    <div class="img-feat">
+                        <img src="/imgs/Features-02.png" alt="img">
+                    </div>
+                    <div class="text-feat">
+                        <h3>Fast</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum omnis saepe, 
+                            dignissimos voluptas.
+                        </p>
+                    </div>
+                </div>
+                <div class="box-feat">
+                    <div class="img-feat">
+                        <img src="/imgs/Features-03.jpg" alt="img">
+                    </div>
+                    <div class="text-feat">
+                        <h3>Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum omnis saepe, 
+                            dignissimos voluptas.
+                        </p>
+                    </div>
+                </div>
+                <div class="box-feat">
+                    <div class="img-feat">
+                        <img src="/imgs/Features-04.png" alt="img">
+                    </div>
+                    <div class="text-feat">
+                        <h3>Guarantee</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum omnis saepe, 
+                            dignissimos voluptas.
+                        </p>
+                    </div>
+                </div>
+                <div class="box-feat">
+                    <div class="img-feat">
+                        <img src="/imgs/Features-05.jpg" alt="img">
+                    </div>
+                    <div class="text-feat">
+                        <h3>Security</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum omnis saepe, 
+                            dignissimos voluptas.
+                        </p>
+                    </div>
+                </div>
+                <div class="box-feat">
+                    <div class="img-feat">
+                        <img src="/imgs/Features-01.png" alt="img">
+                    </div>
+                    <div class="text-feat">
+                        <h3>Quality</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum omnis saepe, 
+                            dignissimos voluptas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Features sectoin -->
+    <!-- Start testimonials sectoin -->
+    <div class="testimonials-sec">
+        <div class="title-sec">
+            <div class="tit">Testimonials</div>
+        </div>
+        <div class="main-box">
+            <div class="container">
+                <div class="content-testi">
+                    <div class="box-testi">
+                        <img src="imgs/avatar-01.png" alt="">
+                        <div class="info">
+                            <h4>Omer Mohamed</h4>
+                            <span>Full Stack Developer</span>
+                            <p>Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
+                        </div>
+                    </div>
+                    <div class="box-testi">
+                        <img src="imgs/avatar-02.png" alt="">
+                        <div class="info">
+                            <h4>Shady Nabil</h4>
+                            <span>Full Stack Developer</span>
+                            <p>Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
+                        </div>
+                    </div>
+                    <div class="box-testi">
+                        <img src="imgs/avatar-03.png">
+                        <div class="info">
+                            <h4>Amr Hendawy</h4>
+                            <span>Web Developer</span>
+                            <p>Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
+                        </div>
+                    </div>
+                    <div class="box-testi">
+                        <img src="imgs/avatar-04.png" alt="">
+                        <div class="info">
+                            <h4>Sherief Ashraf</h4>
+                            <span>CEO Developer</span>
+                            <p>Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End testimonials sectoin -->
+    <!-- Start Contact sectoin -->
+    <div class="contact-sec">
+        <div class="overlay">
+        </div>
+        <div class="container">
+            <div class="title-sec">
+                <div class="tit">contact us</div>
+            </div>
+            <div class="cont-box">
+                <form>
+                    <div class="left">
+                            <input type="text" name="name" placeholder="Enter Your name" required>
+                            <input type="number" name="phone" placeholder="Enter Your Phone Number" required>
+                            <input type="email" name="email" placeholder="Enter Your Email" required>
+                            <input type="text" name="subject" placeholder="Enter Your subject" required>
+                    </div>
+                    <div class="right">
+                            <textarea name="message" placeholder="Enter the Message" required></textarea>
+                            <input type="submit" value="Sent">
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact sectoin -->
+    <!-- Start footer sectoin -->
+    <footer>
+        <div class="container">
+            <div class="contant-footer">
+                <div class="box-footer">
+                    <div class="text-footer">Speical Design</div>
+                    <div class="links-footer">
+                        <a href="https://www.instagram.com/a.ben_saad/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100011113842830" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://github.com/Abdou1001" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-whatsapp" target="_blank"></i></a>
+                    </div>
+                </div>
+                <div class="box-footer-two">
+                    <div class="line">
+                        <i class="fas fa-map-marker-alt fa-fw"></i>
+                        <div class="info">
+                            Yemen, hadramout, Mukalla, ediss
+                        </div>
+                    </div>
+                    <div class="line">
+                        <i class="far fa-clock fa-fw"></i>
+                        <div class="info">
+                            Business Hours: From 10:00 To 18:00
+                        </div>
+                    </div>
+                    <div class="line">
+                        <i class="fas fa-phone-volume fa-fw"></i>
+                        <div class="info">
+                            +967 739712162
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="end">made by <span>Abdulrahman Ahmed Bin Saad</span></div>
+        </div>
+        </footer>
+    <!-- End footer sectoin -->
+
+<script src="JS/master.js"></script> <!-- main JS file -->
+</body>
+</html>
