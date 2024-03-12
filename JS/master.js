@@ -163,8 +163,8 @@ optoinsBack.forEach(ele =>{
 chooseBack.forEach(ele =>{
     ele.addEventListener("click", () => {
         if (changing == false){
-                header.style.backgroundImage = `url("/imgs/${ele.dataset.img}.jpg")`
-                localStorage.setItem("chooseBack" , `url("/imgs/${ele.dataset.img}.jpg")`)
+                header.style.backgroundImage = `url("../imgs/${ele.dataset.img}.jpg")`
+                localStorage.setItem("chooseBack" , `url("../imgs/${ele.dataset.img}.jpg")`)
 
                 chooseBack.forEach(ele =>{
                     ele.classList.remove("active")
@@ -322,10 +322,10 @@ function changeBackground(){
         backInterval = setInterval(() => {
         let randomNum = Math.floor(Math.random() * imgs.length + 1);
 
-        header.style.backgroundImage = `url("/imgs/${randomNum}.jpg")`
+        header.style.backgroundImage = `url("../imgs/${randomNum}.jpg")`
 
         // save the current img in local storge
-        localStorage.setItem("backgroundImage", `url("/imgs/${randomNum}.jpg")`)
+        localStorage.setItem("backgroundImage", `url("../imgs/${randomNum}.jpg")`)
     },8000)
     }
 }
